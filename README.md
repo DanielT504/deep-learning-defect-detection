@@ -1,2 +1,2 @@
-# FYDP_Deep_Learning_Defect_Detection
-Classifying Insulator Defects With Deep Learning
+# FYDP Deep Learning Defect Detection
+Real-Time Classification of Polymer Insulator Defects using Deep Learning

@@ -13,4 +13,4 @@
 | 2023/06/08 |         |         |      |        |       | 1      | Image preprocessing research            |
 | 2023/06/09 |         |         |      |        |       | 2      | CNN research                            |
 | 2023/06/15 | 1       | 1       | 1    | 1      | 1     | 1      | Consultant meeting/group delegation     |
-| 2023/06/15 |         |         |      |        |       | 4      | CNN script setup with MNIST temp data   |
+| 2023/06/23 |         |         |      |        |       | 4      | CNN script setup with MNIST temp data   |

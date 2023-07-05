@@ -1,4 +1,5 @@
 from preprocessing import preprocess_images
+from efficientnet.keras import EfficientNetB0
 from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
 import numpy as np
@@ -6,22 +7,33 @@ import matplotlib.pyplot as plt
 from keras.datasets import mnist
 from keras.utils import to_categorical
 from imgaug import augmenters as iaa
+from PIL import Image
 
 
 #stand-in MNIST datasets
 from keras.datasets import mnist
 from keras.utils import to_categorical
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
-train_images = train_images.reshape((-1, 28, 28, 1))
-test_images = test_images.reshape((-1, 28, 28, 1))
+resized_train_images = []
+resized_test_images = []
+for img in train_images:
+    resized_img = Image.fromarray(img).resize((32, 32)).convert('RGB')
+    resized_train_images.append(np.array(resized_img))
+for img in test_images:
+    resized_img = Image.fromarray(img).resize((32, 32)).convert('RGB')
+    resized_test_images.append(np.array(resized_img))
+train_images = np.array(resized_train_images)
+test_images = np.array(resized_test_images)
+train_images = train_images / 255.0
+test_images = test_images / 255.0
 train_labels = to_categorical(train_labels)
 test_labels = to_categorical(test_labels)
 
 
 # need to be adjusted
-image_height = 28
-image_width = 28
-num_channels = 1
+image_height = 32
+image_width = 32
+num_channels = 3
 num_classes = 10
 num_epochs = 10
 batch_size = 32
@@ -30,13 +42,17 @@ batch_size = 32
 # train_labels = 
 # test_images = 
 
+base_model = EfficientNetB0(weights='imagenet', include_top=False, input_shape=(image_height, image_width, num_channels))
 model = Sequential()
+model.add(base_model)
 
+'''
 #convolutional layer, more needed? adjust kernel size, strides, and filters
 model.add(Conv2D(filters=32, kernel_size=(3, 3), activation='relu', input_shape=(image_height, image_width, num_channels)))
 
 #more pooling needed?
 model.add(MaxPooling2D(pool_size=(2, 2)))
+'''
 
 model.add(Flatten())
 
@@ -57,11 +73,11 @@ predictions = model.predict(test_images)
 
 #plot
 plt.figure(figsize=(10, 10))
-for i in range(10):
+for i in range(len(train_images)):
     plt.subplot(5, 5, i+1)
-    plt.imshow(test_images[i].reshape(image_height, image_width), cmap='gray')
+    plt.imshow(train_images[i], cmap='gray')
     predicted_label = np.argmax(predictions[i])
-    true_label = np.argmax(test_labels[i])
+    true_label = np.argmax(train_labels[i])
     plt.title(f"Predicted: {predicted_label}, True: {true_label}")
     plt.axis('off')
 plt.show()

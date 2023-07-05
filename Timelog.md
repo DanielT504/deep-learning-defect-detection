@@ -20,3 +20,5 @@
 | 2023/06/28 |         |         | 2    |        |       |        | Further CNN research                          |
 | 2023/06/29 | 1       | 1       | 1    | 1      | 1     | 1      | Consultant meeting (doc work and next steps)  |
 | 2023/06/29 |         |         | 2    |        |       | 1      | Detailed design doc work                      |
+| 2023/07/04 |         |         |      |        |       | 5      | Implemented EfficientNetB0 (MNIST doesnt plot)|
+| 2023/07/05 |         |         |      |        |       | 3      | Random search for preprocessed images to train|

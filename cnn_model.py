@@ -1,4 +1,6 @@
 from preprocessing import preprocess_images
+import os
+import random
 from efficientnet.keras import EfficientNetB0
 from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
@@ -9,7 +11,32 @@ from keras.utils import to_categorical
 from imgaug import augmenters as iaa
 from PIL import Image
 
+root_dir = 'dataset'
+selected_image_paths = []
 
+def collect_image_paths(directory):
+    for item in os.listdir(directory):
+        item_path = os.path.join(directory, item)
+        if os.path.isdir(item_path):
+            collect_image_paths(item_path)
+        else:
+            if item_path.lower().endswith(('.jpg', '.jpeg', '.png')):
+                selected_image_paths.append(item_path)
+
+collect_image_paths(root_dir)
+num_images_to_select = 10
+random_image_paths = random.sample(selected_image_paths, num_images_to_select)
+
+#grainy and small, but functional
+random_images = []
+for image_path in random_image_paths:
+    image = Image.open(image_path)
+    image = image.resize((32, 32))
+    image = image.convert('RGB')
+    image = np.array(image) / 255.0
+    random_images.append(image)
+
+'''
 #stand-in MNIST datasets
 from keras.datasets import mnist
 from keras.utils import to_categorical
@@ -28,15 +55,18 @@ train_images = train_images / 255.0
 test_images = test_images / 255.0
 train_labels = to_categorical(train_labels)
 test_labels = to_categorical(test_labels)
+'''
 
-
-# need to be adjusted
 image_height = 32
 image_width = 32
 num_channels = 3
 num_classes = 10
 num_epochs = 10
 batch_size = 32
+train_images = np.array(random_images)
+train_labels = to_categorical(np.zeros(num_images_to_select), num_classes)
+test_images = np.array(random_images)
+test_labels = to_categorical(np.zeros(num_images_to_select), num_classes)
 
 # train_images = 
 # train_labels = 

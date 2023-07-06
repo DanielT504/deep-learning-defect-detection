@@ -9,3 +9,12 @@ PLEASE READ:
     If you do not want this (for dev purposes), comment out the first line in cnn_model.py.
     If you do unpack the images, make sure not to commit the dataset folder, because it is way too large for a git repo.
     After the images are preprocessed, you won't need to wait for them next time.
+
+Next models to try:
+EfficientNetB7
+ResNet50
+ResNet101
+Xception
+InceptionV3
+MobilenetV2
+MobileNet

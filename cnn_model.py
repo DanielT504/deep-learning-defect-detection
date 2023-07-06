@@ -10,6 +10,7 @@ from keras.datasets import mnist
 from keras.utils import to_categorical
 from imgaug import augmenters as iaa
 from PIL import Image
+from sklearn.metrics import confusion_matrix
 
 root_dir = 'dataset'
 selected_image_paths = []
@@ -24,10 +25,10 @@ def collect_image_paths(directory):
                 selected_image_paths.append(item_path)
 
 collect_image_paths(root_dir)
-num_images_to_select = 10
+num_images_to_select = 4000
 random_image_paths = random.sample(selected_image_paths, num_images_to_select)
 
-#grainy and small, but functional
+# Grainy and small, but functional
 random_images = []
 for image_path in random_image_paths:
     image = Image.open(image_path)
@@ -36,78 +37,55 @@ for image_path in random_image_paths:
     image = np.array(image) / 255.0
     random_images.append(image)
 
-'''
-#stand-in MNIST datasets
-from keras.datasets import mnist
-from keras.utils import to_categorical
-(train_images, train_labels), (test_images, test_labels) = mnist.load_data()
-resized_train_images = []
-resized_test_images = []
-for img in train_images:
-    resized_img = Image.fromarray(img).resize((32, 32)).convert('RGB')
-    resized_train_images.append(np.array(resized_img))
-for img in test_images:
-    resized_img = Image.fromarray(img).resize((32, 32)).convert('RGB')
-    resized_test_images.append(np.array(resized_img))
-train_images = np.array(resized_train_images)
-test_images = np.array(resized_test_images)
-train_images = train_images / 255.0
-test_images = test_images / 255.0
-train_labels = to_categorical(train_labels)
-test_labels = to_categorical(test_labels)
-'''
-
 image_height = 32
 image_width = 32
 num_channels = 3
-num_classes = 10
+num_classes = 7
 num_epochs = 10
 batch_size = 32
 train_images = np.array(random_images)
-train_labels = to_categorical(np.zeros(num_images_to_select), num_classes)
+train_labels = np.random.randint(0, num_classes, size=num_images_to_select)
 test_images = np.array(random_images)
-test_labels = to_categorical(np.zeros(num_images_to_select), num_classes)
-
-# train_images = 
-# train_labels = 
-# test_images = 
+test_labels = np.random.randint(0, num_classes, size=num_images_to_select)
 
 base_model = EfficientNetB0(weights='imagenet', include_top=False, input_shape=(image_height, image_width, num_channels))
 model = Sequential()
 model.add(base_model)
-
-'''
-#convolutional layer, more needed? adjust kernel size, strides, and filters
-model.add(Conv2D(filters=32, kernel_size=(3, 3), activation='relu', input_shape=(image_height, image_width, num_channels)))
-
-#more pooling needed?
-model.add(MaxPooling2D(pool_size=(2, 2)))
-'''
-
 model.add(Flatten())
-
-#fully connected layers, need more? add a dropout layer?
 model.add(Dense(units=128, activation='relu'))
 model.add(Dense(units=num_classes, activation='softmax'))
-
-model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
-
+model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 model.fit(train_images, train_labels, epochs=num_epochs, batch_size=batch_size)
 
-#evaluation
+# Evaluation
 test_loss, test_accuracy = model.evaluate(test_images, test_labels)
 print('Test Loss:', test_loss)
 print('Test Accuracy:', test_accuracy)
 
+# Predictions
 predictions = model.predict(test_images)
+predicted_labels = np.argmax(predictions, axis=1)
 
-#plot
-plt.figure(figsize=(10, 10))
-for i in range(len(train_images)):
-    plt.subplot(5, 5, i+1)
-    plt.imshow(train_images[i], cmap='gray')
-    predicted_label = np.argmax(predictions[i])
-    true_label = np.argmax(train_labels[i])
-    plt.title(f"Predicted: {predicted_label}, True: {true_label}")
-    plt.axis('off')
+# Plot confusion matrix
+cm = confusion_matrix(test_labels, predicted_labels)
+
+# Plot confusion matrix
+plt.figure(figsize=(8, 8))
+plt.imshow(cm, interpolation='nearest', cmap='Blues')
+plt.title('Confusion Matrix')
+plt.colorbar()
+tick_marks = np.arange(num_classes)
+plt.xticks(tick_marks, range(1, num_classes + 1))
+plt.yticks(tick_marks, range(1, num_classes + 1))
+plt.xlabel('Predicted Label')
+plt.ylabel('True Label')
+
+thresh = cm.max() / 2.0
+for i in range(num_classes):
+    for j in range(num_classes):
+        plt.text(j, i, format(cm[i, j], 'd'),
+                 horizontalalignment="center",
+                 color="white" if cm[i, j] > thresh else "black")
+
+plt.tight_layout()
 plt.show()

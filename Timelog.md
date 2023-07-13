@@ -27,5 +27,11 @@
 | 2023/07/05 | 00:00 | 04:00 |         |         |      |        |       | 4      | Random search for preprocessed images to train       |
 | 2023/07/05 | 13:00 | 16:00 |         |         |      |        |       | 3      | Preprocessed image testing with 1st pretrained model |
 | 2023/07/05 | 16:30 | 17:30 | 1       | 1       | 1    | 1      | 1     | 1      | FYDP class 4                                         |
+| 2023/07/13 | 19:00 | 24:00 | 5       | 5       | 5    | 5      | 5     | 5      | Group meeting                                        |
 | 2023/07/06 | 14:00 | 15:00 | 1       | 1       | 1    | 1      | 1     | 1      | Consultant meeting                                   |
 | 2023/07/06 | 15:00 | 17:00 |         |         |      |        |       | 2      | Added confusion matrix                               |
+| 2023/07/11 | 19:00 | 24:00 |         |         |      |        |       | 5      | Debugging accuracy and loss                          |
+| 2023/07/13 | 16:30 | 17:30 | 1       | 1       | 1    | 1      | 1     | 1      | FYDP class 5                                         |
+| 2023/07/13 | 14:00 | 15:00 | 1       | 1       | 1    | 1      | 1     | 1      | Consultant meeting                                   |
+| 2023/07/13 | 15:00 | 16:00 | 1       | 1       | 1    | 1      | 1     | 1      | Group meeting                                        |
+| 2023/07/13 | 16:30 | 19:30 |         |         |      |        |       | 3      | Fixed training and testing image selection           |

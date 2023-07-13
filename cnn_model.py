@@ -13,29 +13,56 @@ from PIL import Image
 from sklearn.metrics import confusion_matrix
 
 root_dir = 'dataset'
-selected_image_paths = []
+selected_image_paths_train = []
+selected_image_paths_test = []
 
-def collect_image_paths(directory):
+def collect_image_paths(directory, excluded_folder):
+    num_images_used_train = 0
+    num_images_used_test = 0
     for item in os.listdir(directory):
         item_path = os.path.join(directory, item)
         if os.path.isdir(item_path):
-            collect_image_paths(item_path)
+            if os.path.basename(item_path).lower() != excluded_folder.lower():
+                used_train, used_test = collect_image_paths(item_path, excluded_folder)
+                num_images_used_train += used_train
+                num_images_used_test += used_test
+            else:
+                _, used_test = collect_image_paths(item_path, excluded_folder)
+                num_images_used_test += used_test
         else:
             if item_path.lower().endswith(('.jpg', '.jpeg', '.png')):
-                selected_image_paths.append(item_path)
+                if excluded_folder not in os.path.dirname(item_path):
+                    selected_image_paths_train.append(item_path)
+                    num_images_used_train += 1
+                else:
+                    selected_image_paths_test.append(item_path)
+                    num_images_used_test += 1
+    return num_images_used_train, num_images_used_test
 
-collect_image_paths(root_dir)
-num_images_to_select = 4000
-random_image_paths = random.sample(selected_image_paths, num_images_to_select)
+excluded_folder = "original_only"
+num_images_used_train, num_images_used_test = collect_image_paths(root_dir, excluded_folder)
 
-# Grainy and small, but functional
-random_images = []
-for image_path in random_image_paths:
+print(f"Total training images used: {num_images_used_train}")
+print(f"Total testing images used: {num_images_used_test}")
+
+train_images = []
+for image_path in selected_image_paths_train:
     image = Image.open(image_path)
     image = image.resize((32, 32))
     image = image.convert('RGB')
     image = np.array(image) / 255.0
-    random_images.append(image)
+    train_images.append(image)
+
+test_images = []
+for image_path in selected_image_paths_test:
+    image = Image.open(image_path)
+    image = image.resize((32, 32))
+    image = image.convert('RGB')
+    image = np.array(image) / 255.0
+    test_images.append(image)
+
+train_images = np.array(train_images)
+test_images = np.array(test_images)
 
 image_height = 32
 image_width = 32
@@ -43,10 +70,9 @@ num_channels = 3
 num_classes = 7
 num_epochs = 10
 batch_size = 32
-train_images = np.array(random_images)
-train_labels = np.random.randint(0, num_classes, size=num_images_to_select)
-test_images = np.array(random_images)
-test_labels = np.random.randint(0, num_classes, size=num_images_to_select)
+
+train_labels = np.random.randint(1, num_classes + 1, size=num_images_used_train) - 1
+test_labels = np.random.randint(1, num_classes + 1, size=num_images_used_test) - 1
 
 base_model = EfficientNetB0(weights='imagenet', include_top=False, input_shape=(image_height, image_width, num_channels))
 model = Sequential()
@@ -68,8 +94,6 @@ predicted_labels = np.argmax(predictions, axis=1)
 
 # Plot confusion matrix
 cm = confusion_matrix(test_labels, predicted_labels)
-
-# Plot confusion matrix
 plt.figure(figsize=(8, 8))
 plt.imshow(cm, interpolation='nearest', cmap='Blues')
 plt.title('Confusion Matrix')

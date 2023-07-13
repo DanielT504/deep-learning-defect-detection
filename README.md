@@ -10,11 +10,34 @@ PLEASE READ:
     If you do unpack the images, make sure not to commit the dataset folder, because it is way too large for a git repo.
     After the images are preprocessed, you won't need to wait for them next time.
 
-Next models to try:
-EfficientNetB7
-ResNet50
-ResNet101
-Xception
-InceptionV3
-MobilenetV2
-MobileNet
+TODO:
+Next models to try: EfficientNetB7 ResNet50 ResNet101 Xception InceptionV3 MobilenetV2 MobileNet
+Merge 5, 5+ labels and update confusin matrix
+
+Most recent evaluation (pretty bad):
+    Total training images used: 7100
+    Total testing images used: 284
+    Epoch 1/10
+    222/222 [==============================] - 57s 142ms/step - loss: 2.1286 - accuracy: 0.1408
+    Epoch 2/10
+    222/222 [==============================] - 32s 145ms/step - loss: 1.9821 - accuracy: 0.1514
+    Epoch 3/10
+    222/222 [==============================] - 32s 143ms/step - loss: 1.9519 - accuracy: 0.1390
+    Epoch 4/10
+    222/222 [==============================] - 32s 146ms/step - loss: 1.9472 - accuracy: 0.1501
+    Epoch 5/10
+    222/222 [==============================] - 32s 144ms/step - loss: 1.9530 - accuracy: 0.1496
+    Epoch 6/10
+    222/222 [==============================] - 32s 143ms/step - loss: 1.9467 - accuracy: 0.1513
+    Epoch 7/10
+    222/222 [==============================] - 32s 143ms/step - loss: 1.9474 - accuracy: 0.1480
+    Epoch 8/10
+    222/222 [==============================] - 32s 143ms/step - loss: 1.9476 - accuracy: 0.1527
+    Epoch 9/10
+    222/222 [==============================] - 31s 142ms/step - loss: 1.9461 - accuracy: 0.1504
+    Epoch 10/10
+    222/222 [==============================] - 32s 143ms/step - loss: 1.9446 - accuracy: 0.1518
+    9/9 [==============================] - 2s 34ms/step - loss: 1.9519 - accuracy: 0.1162
+    Test Loss: 1.9519131183624268
+    Test Accuracy: 0.11619718372821808
+    9/9 [==============================] - 2s 34ms/step

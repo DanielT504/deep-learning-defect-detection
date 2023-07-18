@@ -1,0 +1,50 @@
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Python virtual environment files
+venv/
+env/
+*.env
+
+# Ignore logs and other generated files
+*.log
+*.pot
+*.pyc
+*.swp
+*.db
+*.sqlite3
+*.pyc
+*.json
+*.html
+*.pickle
+*.md
+*.csv
+*.jpg
+
+# Ignore generated folders and build files
+dist/
+build/
+*.egg-info/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore system-specific files and folders
+*.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Ignore environment-specific files
+.env
+
+# Ignore any sensitive or private data files (modify as needed)
+config.ini
+secrets.yml
+
+# Ignore backup files
+*.bak
+*.backup

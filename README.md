@@ -11,8 +11,8 @@ PLEASE READ:
     After the images are preprocessed, you won't need to wait for them next time.
 
 TODO:
-Next models to try: EfficientNetB7 ResNet50 ResNet101 Xception InceptionV3 MobilenetV2 MobileNet
-Merge 5, 5+ labels and update confusin matrix
+Next models to try: ResNet50 ResNet101 Xception InceptionV3 MobilenetV2 MobileNet
+Merge 5, 5+ labels and update confusion matrix
 
 Most recent evaluation (pretty bad):
     Total training images used: 7100
@@ -41,3 +41,5 @@ Most recent evaluation (pretty bad):
     Test Loss: 1.9519131183624268
     Test Accuracy: 0.11619718372821808
     9/9 [==============================] - 2s 34ms/step
+
+WIP: EfficientNetB7

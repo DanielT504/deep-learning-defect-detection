@@ -43,6 +43,7 @@ Test Accuracy: 0.9958847761154175
 8/8 [==============================] - 3s 38ms/step
 
 Confusion Matrix:
+
 <img width="789" alt="Screen Shot 2023-07-19 at 1 11 19 PM" src="https://github.com/DanielT504/deep-learning-defect-detection/assets/59990709/11d460da-5a33-4e48-bc6d-039a989dc90b">
 
 

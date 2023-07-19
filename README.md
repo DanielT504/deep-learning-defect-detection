@@ -14,32 +14,32 @@ TODO:
 Next models to try: ResNet50 ResNet101 Xception InceptionV3 MobilenetV2 MobileNet
 Merge 5, 5+ labels and update confusion matrix
 
-Most recent evaluation (pretty bad):
-    Total training images used: 7100
-    Total testing images used: 284
-    Epoch 1/10
-    222/222 [==============================] - 57s 142ms/step - loss: 2.1286 - accuracy: 0.1408
-    Epoch 2/10
-    222/222 [==============================] - 32s 145ms/step - loss: 1.9821 - accuracy: 0.1514
-    Epoch 3/10
-    222/222 [==============================] - 32s 143ms/step - loss: 1.9519 - accuracy: 0.1390
-    Epoch 4/10
-    222/222 [==============================] - 32s 146ms/step - loss: 1.9472 - accuracy: 0.1501
-    Epoch 5/10
-    222/222 [==============================] - 32s 144ms/step - loss: 1.9530 - accuracy: 0.1496
-    Epoch 6/10
-    222/222 [==============================] - 32s 143ms/step - loss: 1.9467 - accuracy: 0.1513
-    Epoch 7/10
-    222/222 [==============================] - 32s 143ms/step - loss: 1.9474 - accuracy: 0.1480
-    Epoch 8/10
-    222/222 [==============================] - 32s 143ms/step - loss: 1.9476 - accuracy: 0.1527
-    Epoch 9/10
-    222/222 [==============================] - 31s 142ms/step - loss: 1.9461 - accuracy: 0.1504
-    Epoch 10/10
-    222/222 [==============================] - 32s 143ms/step - loss: 1.9446 - accuracy: 0.1518
-    9/9 [==============================] - 2s 34ms/step - loss: 1.9519 - accuracy: 0.1162
-    Test Loss: 1.9519131183624268
-    Test Accuracy: 0.11619718372821808
-    9/9 [==============================] - 2s 34ms/step
+Most recent evaluation (very good):
+    Total training images used: 6074
+    Total testing images used: 242
+Epoch 1/10
+190/190 [==============================] - 48s 163ms/step - loss: 0.7509 - accuracy: 0.7315
+Epoch 2/10
+190/190 [==============================] - 33s 173ms/step - loss: 0.2799 - accuracy: 0.9052
+Epoch 3/10
+190/190 [==============================] - 32s 170ms/step - loss: 0.1987 - accuracy: 0.9335
+Epoch 4/10
+190/190 [==============================] - 35s 184ms/step - loss: 0.1397 - accuracy: 0.9569
+Epoch 5/10
+190/190 [==============================] - 31s 165ms/step - loss: 0.1331 - accuracy: 0.9577
+Epoch 6/10
+190/190 [==============================] - 32s 167ms/step - loss: 0.1060 - accuracy: 0.9684
+Epoch 7/10
+190/190 [==============================] - 32s 169ms/step - loss: 0.0939 - accuracy: 0.9700
+Epoch 8/10
+190/190 [==============================] - 33s 171ms/step - loss: 0.0784 - accuracy: 0.9761
+Epoch 9/10
+190/190 [==============================] - 36s 190ms/step - loss: 0.1262 - accuracy: 0.9646
+Epoch 10/10
+190/190 [==============================] - 38s 196ms/step - loss: 0.0718 - accuracy: 0.9794
+8/8 [==============================] - 3s 74ms/step - loss: 0.0220 - accuracy: 0.9959
+Test Loss: 0.02202831394970417
+Test Accuracy: 0.9958847761154175
+8/8 [==============================] - 3s 38ms/step
 
 WIP: EfficientNetB7

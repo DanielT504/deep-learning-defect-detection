@@ -1,7 +1,8 @@
 from preprocessing import preprocess_images
 import os
 import random
-from efficientnet.keras import EfficientNetB0
+# from efficientnet.keras import EfficientNetB0
+from keras.applications import MobileNetV2
 from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
 import numpy as np
@@ -41,7 +42,13 @@ batch_size = 32
 train_labels = generate_training_labels(selected_image_paths_train)
 test_labels = generate_training_labels(selected_image_paths_test)
 
-base_model = EfficientNetB0(weights='imagenet', include_top=False, input_shape=(image_height, image_width, num_channels))
+base_model = MobileNetV2(
+    input_shape=(image_height, image_width, num_channels),
+    include_top=False,
+    weights='imagenet',
+)
+
+# base_model = EfficientNetB0(weights='imagenet', include_top=False, input_shape=(image_height, image_width, num_channels))
 model = Sequential()
 model.add(base_model)
 model.add(Flatten())

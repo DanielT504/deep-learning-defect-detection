@@ -7,7 +7,7 @@ from sklearn.metrics import confusion_matrix
 # constants: current dimensions
 IMAGE_WIDTH = 32
 IMAGE_HEIGHT = 32
-
+OS = "windows" # depends on split delimiter
 # reusable functions
 selected_image_paths_train = []
 selected_image_paths_test = []
@@ -58,7 +58,8 @@ def generate_training_labels(selected_image_paths: list):
     count = 0
     for path in selected_image_paths:
         print("generating labels: ", count, "of ", total)
-        subdir = path.split("/")
+        subdir = path.split("\\" if OS == "windows" else "/")
+        print(path)
         training_labels.append(int(subdir[2]))
         count += 1
     training_labels = np.array(training_labels)

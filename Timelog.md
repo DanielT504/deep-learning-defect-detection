@@ -35,5 +35,6 @@
 | 2023/07/13 | 14:00 | 15:00 | 1       | 1       | 1    | 1      | 1     | 1      | Consultant meeting                                   |
 | 2023/07/13 | 15:00 | 16:00 | 1       | 1       | 1    | 1      | 1     | 1      | Group meeting                                        |
 | 2023/07/13 | 16:30 | 19:30 |         |         |      |        |       | 3      | Fixed training and testing image selection           |
+| 2023/07/15 | 15:30 | 16:30 |         |         | 1    |        |       |        | Streamline setup                                     |
 | 2023/07/18 | 17:30 | 20:30 |         |         | 3    |        |       |        | Refactoring, bug testing                             |
 | 2023/07/19 | 12:30 | 14:30 |         |         | 2    |        |       |        | Bug fix                                              |

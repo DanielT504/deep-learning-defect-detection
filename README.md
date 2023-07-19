@@ -42,4 +42,5 @@ Test Loss: 0.02202831394970417
 Test Accuracy: 0.9958847761154175
 8/8 [==============================] - 3s 38ms/step
 
-WIP: EfficientNetB7
+WIP:
+Mehr - EfficientNetB7

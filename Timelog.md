@@ -1,6 +1,7 @@
 | Date       | Start | End   | Vincent | Claudia | Mehr | Muhana | Maria | Daniel | Task                                                 |
 |------------|-------|-------|---------|---------|------|--------|-------|--------|------------------------------------------------------|
-| 2023/05/10 | 16:30 | 17:30 | 1       | 1       | 1    | 1      | 1     | 1      | FDYP class 1                                         |
+| 2023/05/10 | 16:30 | 17:30 | 1       | 1       | 1    | 1      | 1     | 1      | FDYP class 1    
+| 2023/05/16 | 20:00 | 21:00 |         |         |      | 1      |       |        | Brainstorming: reading abstracts                     |    
 | 2023/05/17 | 13:00 | 17:00 | 4       | 4       | 4    | 4      | 4     | 4      | Brainstorming group meeting                          |
 | 2023/05/18 | 13:00 | 18:00 | 5       | 5       | 5    | 5      | 5     | 5      | Brainstorming group meeting                          |
 | 2023/05/19 | 12:00 | 14:00 | 2       | 2       | 2    | 2      | 2     | 2      | Potential consultant meeting (Zahedi)                |
@@ -39,6 +40,7 @@
 | 2023/07/06 | 15:00 | 17:00 |         |         |      |        |       | 2      | Added confusion matrix                               |
 | 2023/07/07 | 12:00 | 22:00 |         |         |      |        |       | 6      | Xception and InceptionV3 trials                      |
 | 2023/07/11 | 19:00 | 24:00 |         |         |      |        |       | 5      | Debugging accuracy and loss                          |
+| 2023/07/12 | 20:00 | 21:00 |         |         |      | 1      |       |        | Preparing for consultant evaluation                  |
 | 2023/07/13 | 16:30 | 17:30 | 1       | 1       | 1    | 1      | 1     | 1      | FYDP class 5                                         |
 | 2023/07/13 | 14:00 | 15:00 | 1       | 1       | 1    | 1      | 1     | 1      | Consultant meeting                                   |
 | 2023/07/13 | 15:00 | 20:00 | 5       | 5       | 5    | 5      | 5     | 5      | Group meeting                                        |
@@ -48,3 +50,4 @@
 | 2023/07/19 | 12:30 | 14:30 |         |         | 2    |        |       |        | Bug fix                                              |
 | 2023/07/20 | 14:00 | 15:00 | 1       | 1       | 1    | 1      | 1     | 1      | Consultant meeting                                   |
 | 2023/07/22 | 12:00 | 22:00 |         |         |      |        |       | 4      | New dataset evaluation                               |
+| 2023/07/27 | 16:00 | 21:00 | 5       | 5       | 5    | 5      | 5     | 5      | Revised abstract, logs + report                      |

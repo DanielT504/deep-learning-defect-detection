@@ -11,8 +11,11 @@
 | 2023/05/23 | 16:00 | 19:00 | 3       | 3       | 3    | 3      | 3     | 3      | Group meeting discussing consultant options          |
 | 2023/05/23 | 18:00 | 22:00 | 4       | 4       | 4    | 4      | 4     | 4      | Consultant meeting (abstract, planning)              |
 | 2023/05/24 | 16:30 | 17:30 | 1       | 1       | 1    | 1      | 1     | 1      | FYDP class 2                                         |
+| 2023/05/29 | 11:30 | 12:00 |         |         |      | 0.5    |       |        | FYDP Safety quiz completion                          |
 | 2023/05/30 | 13:00 | 17:00 | 4       | 4       | 4    | 4      | 4     | 4      | Project spec meeting                                 |
 | 2023/06/06 | 18:00 | 21:00 |         |         | 3    |        |       | 3      | FP and NFP research for spec doc                     |
+| 2023/06/06 | 19:00 | 23:00 |         |         |      | 4      |       |        | Risk assessment writeup for specs. doc               |
+| 2023/06/07 | 10:00 | 14:00 |         |         |      | 4      |       |        | Block diagram creation + explanation                 |
 | 2023/06/07 | 13:00 | 17:00 | 4       | 4       | 4    | 4      | 4     | 4      | Consultant meeting and abstract prep                 |
 | 2023/06/08 | 14:00 | 15:00 | 1       | 1       | 1    | 1      | 1     | 1      | Consultant/grad student meeting                      |
 | 2023/06/08 | 12:00 | 14:00 |         |         |      |        |       | 2      | Image preprocessing research                         |
@@ -26,6 +29,8 @@
 | 2023/06/26 | 12:00 | 13:00 |         |         |      |        |       | 1      | Detailed design doc work                             |
 | 2023/06/26 | 16:00 | 21:00 |         |         |      |        |       | 5      | Preprocessing automation and sequential augmentation |
 | 2023/06/28 | 21:00 | 23:00 |         |         | 2    |        |       | 2      | Further CNN research                                 |
+| 2023/06/28 | 20:00 | 23:00 |         |         |      | 3      |       |        | Gantt chart creation                                 |
+| 2023/06/29 | 17:00 | 23:00 |         |         |      | 5      |       |        | Detailed design doc                                  |
 | 2023/06/29 | 14:00 | 15:00 | 1       | 1       | 1    | 1      | 1     | 1      | Consultant meeting (doc work and next steps)         |
 | 2023/06/29 | 20:00 | 22:00 |         |         | 2    |        |       | 2      | Detailed design doc work                             |
 | 2023/06/30 | 16:30 | 21:30 |         |         |      |        |       | 5      | ResNet50 model testing                               |

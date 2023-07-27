@@ -5,7 +5,7 @@
 | 2023/05/18 | 13:00 | 15:00 | 3       | 3       | 3    | 3      | 3     | 3      | Brainstorming group meeting                          |
 | 2023/05/19 | 12:00 | 14:00 | 2       | 2       | 2    | 2      | 2     | 2      | Potential consultant meeting (Zahedi)                |
 | 2023/05/22 | 09:00 | 10:00 | 1       | 1       | 1    | 1      | 1     | 1      | Potential consultant meeting (Carr)                  |
-| 2023/05/22 | 09:00 | 10:00 |         |         | 1    |        | 1     |        | Potential consultant meeting (Harder)                |
+| 2023/05/22 | 09:00 | 10:00 | 1       | 1       | 1    | 1      | 1     | 1      | Potential consultant meeting (Harder)                |
 | 2023/05/23 | 14:00 | 16:00 | 2       | 2       | 2    | 2      | 2     | 2      | Consultant meeting (El-Hag)                          |
 | 2023/05/23 | 16:00 | 18:00 | 2       | 2       | 2    | 2      | 2     | 2      | Group meeting discussing consultant options          |
 | 2023/05/23 | 18:00 | 21:00 | 3       | 3       | 3    | 3      | 3     | 3      | Consultant meeting (abstract, planning)              |

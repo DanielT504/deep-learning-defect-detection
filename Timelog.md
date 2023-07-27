@@ -44,4 +44,5 @@
 | 2023/07/15 | 15:30 | 16:30 |         |         | 1    |        |       |        | Streamline setup                                     |
 | 2023/07/18 | 17:30 | 20:30 |         |         | 3    |        |       |        | Refactoring, bug testing                             |
 | 2023/07/19 | 12:30 | 14:30 |         |         | 2    |        |       |        | Bug fix                                              |
+| 2023/07/20 | 14:00 | 15:00 | 1       | 1       | 1    | 1      | 1     | 1      | Consultant meeting                                   |
 | 2023/07/22 | 12:00 | 22:00 |         |         |      |        |       | 4      | New dataset evaluation                               |

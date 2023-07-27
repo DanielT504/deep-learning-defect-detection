@@ -16,6 +16,7 @@
 | 2023/06/08 | 14:00 | 15:00 | 1       | 1       | 1    | 1      | 1     | 1      | Consultant/grad student meeting                      |
 | 2023/06/08 | 12:00 | 14:00 |         |         |      |        |       | 2      | Image preprocessing research                         |
 | 2023/06/09 | 12:00 | 15:00 |         |         |      |        |       | 3      | CNN research                                         |
+| 2023/06/11 | 12:30 | 16:30 | 4       | 4       | 4    | 4      | 4     | 4      | Group meeting                                        |
 | 2023/06/14 | 16:30 | 17:30 | 1       | 1       | 1    | 1      | 1     | 1      | FYDP class 3                                         |
 | 2023/06/15 | 14:00 | 15:00 | 1       | 1       | 1    | 1      | 1     | 1      | Consultant meeting/group delegation                  |
 | 2023/06/29 | 20:00 | 23:00 |         |         |      |        |       | 3      | MobileNet/MobilenetV2 research                       |
@@ -28,6 +29,7 @@
 | 2023/06/29 | 20:00 | 22:00 |         |         | 2    |        |       | 2      | Detailed design doc work                             |
 | 2023/06/30 | 16:30 | 21:30 |         |         |      |        |       | 5      | ResNet50 model testing                               |
 | 2023/06/02 | 18:00 | 21:00 |         |         |      |        |       | 3      | ResNet101 model testing                              |
+| 2023/07/04 | 12:30 | 16:30 | 4       | 4       | 4    | 4      | 4     | 4      | Group meeting                                        |
 | 2023/07/04 | 17:30 | 23:30 |         |         |      |        |       | 6      | Implemented EfficientNetB0 (MNIST doesn't plot)      |
 | 2023/07/05 | 00:00 | 04:00 |         |         |      |        |       | 4      | Random search for preprocessed images to train       |
 | 2023/07/05 | 13:00 | 16:00 |         |         |      |        |       | 3      | Preprocessed image testing with 1st pretrained model |

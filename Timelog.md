@@ -91,21 +91,22 @@
 | 2023/07/12 | 20:00 | 21:00 |         |         |      | 1      |       |        | Preparing for consultant evaluation                  |
 | 2023/07/12 | 13:00 | 16:00 |         |         |      |        | 3     |        | Further researching ways to deploy deep learning model with mobile/web app|
 | 2023/07/13 | 14:00 | 15:00 | 1       | 1       | 1    | 1      | 1     | 1      | Consultant meeting                                   |
-| 2023/07/13 | 16:30 | 17:30 | 1       | 1       | 1    | 1      | 1     | 1      | FYDP class 5                                         |
+| 2023/07/13 | 16:30 | 17:30 | 1       | 1       | 1    | 1      |       | 1      | FYDP class 5                                         |
 | 2023/07/13 | 15:00 | 20:00 | 5       | 5       | 5    | 5      | 5     | 5      | Group meeting                                        |
 | 2023/07/13 | 16:30 | 19:30 |         |         |      |        |       | 3      | Fixed training and testing image selection           |
 | 2023/07/14 | 19:00 | 22:00 |         | 3       |      |        |       |        | Clone repository and run image generation            |
 | 2023/07/14 | 15:00 | 20:00 |         |         |      | 5      |       |        | React Native research (mobile + web integration)     |
 | 2023/07/15 | 15:00 | 18:00 |         | 3       |      |        |       |        | MobilenetV2 research                                 |
 | 2023/07/15 | 15:30 | 16:30 |         |         | 1    |        |       |        | Streamline setup                                     |
+| 2023/07/15 | 10:00 | 24:00 |         |         |      | 5      | 5     |        | Group meeting (project work)                         |
 | 2023/07/17 | 15:00 | 17:00 |         |         |      | 2      |       |        | Training model code review – generating confusion matrix |
 | 2023/07/19 | 19:00 | 22:00 |         | 3       |      |        |       |        | AWS infrastructure/ecosystem research                |
 | 2023/07/18 | 17:30 | 20:30 |         |         | 3    |        |       |        | Refactoring, bug testing                             |
 | 2023/07/19 | 12:30 | 14:30 |         |         | 2    |        |       |        | Bug fix                                              |
 | 2023/07/19 | 13:00 | 17:00 |         |         |      |        | 4     |        | Planning out possible & feasible UI designs and workflow (mobile + web) + prep for consultant meeting|
 | 2023/07/19 | 14:00 | 16:00 |         | 2       |      |        |       |        | MobilenetV2 Prototyping/evaluating                   |
-| 2023/07/20 | 14:00 | 15:00 | 1       | 1       | 1    | 1      | 1     | 1      | Consultant meeting                                   |
+| 2023/07/20 | 14:00 | 15:00 | 1       | 1       | 1    | 1      |       | 1      | Consultant meeting                                   |
 | 2023/07/22 | 12:00 | 22:00 |         |         |      |        |       | 4      | New dataset evaluation                               |
 | 2023/07/25 | 15:30 | 19:30 |         |         |      | 4      |       |        | UI design rough outline mockup                       |
 | 2023/07/27 | 16:00 | 21:00 | 5       | 5       | 5    | 5      | 5     | 5      | Revised abstract, logs + report                      |
-| 2023/07/28 | 15:00 | 20:00 | 5       | 5       | 5    | 5      | 5     | 5      | Continued edits and work on abstract, logs + report  |
+| 2023/07/28 | 15:00 | 20:00 | 5       | 5       | 5    | 5      | 3     | 5      | Continued edits and work on abstract, logs + report  |

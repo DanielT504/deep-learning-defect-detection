@@ -37,6 +37,5 @@ Test Loss: 0.02202831394970417
 Test Accuracy: 0.9958847761154175
 8/8 [==============================] - 3s 38ms/step
 
-Confusion Matrix:
 <img width="789" alt="conf_matrix" src="https://github.com/DanielT504/deep-learning-defect-detection/assets/62156098/641edcf6-410e-4857-99da-f447fc7d5e40">
 

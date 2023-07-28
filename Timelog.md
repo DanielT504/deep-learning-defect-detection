@@ -22,6 +22,7 @@
 | 2023/05/29 | 11:30 | 12:00 |         |         |      | 0.5    |       |        | FYDP Safety quiz completion                          |
 | 2023/05/29 | 16:30 | 18:30 |         | 2       |      |        |       |        | Continue reading research paper, making notes        |
 | 2023/05/30 | 13:00 | 17:00 | 4       | 4       | 4    | 4      | 4     | 4      | Project spec meeting                                 |
+| 2023/05/30 | 13:00 | 17:00 |         |         |      | 1      |       |        | Initial Project Specs. Doc outlining                 |
 | 2023/06/04 | 12:00 | 14:00 |         | 2       |      |        |       |        | Spec document writeup                                |
 | 2023/06/06 | 18:00 | 21:00 |         |         | 3    |        |       | 3      | FP and NFP research for spec doc                     |
 | 2023/06/06 | 19:00 | 23:00 |         |         |      | 4      |       |        | Risk assessment writeup for specs. doc               |
@@ -30,6 +31,7 @@
 | 2023/06/07 | 13:00 | 17:00 | 4       | 4       | 4    | 4      | 4     | 4      | Consultant meeting and abstract prep                 |
 | 2023/06/08 | 14:00 | 15:00 | 1       | 1       | 1    | 1      | 1     | 1      | Consultant/grad student meeting                      |
 | 2023/06/08 | 12:00 | 14:00 |         |         |      |        |       | 2      | Image preprocessing research                         |
+| 2023/06/08 | 15:00 | 17:30 |         |         |      | 2.5    |       |        | Reviewing/editing specs. Document and submission     |
 | 2023/06/09 | 12:00 | 15:00 |         |         |      |        |       | 3      | CNN research                                         |
 | 2023/06/11 | 12:30 | 16:30 | 4       | 4       | 4    | 4      | 4     | 4      | Group meeting                                        |
 | 2023/06/12 | 17:30 | 20:30 |         | 2.5     |      |        |       |        | Basic CNN research                                   |
@@ -40,6 +42,7 @@
 | 2023/06/20 | 10:30 | 13:00 |         | 2.5     |      |        |       |        | Image pre-processing methods research/testing        |
 | 2023/06/21 | 19:00 | 22:30 |         | 3.5     |      |        |       |        | React native research/introductory tutorial          |
 | 2023/06/23 | 18:00 | 22:00 |         |         |      |        |       | 4      | CNN script setup with MNIST temp data                |
+| 2023/06/23 | 17:00 | 23:00 |         |         |      | 5      |       |        | Initial research on CNN                              |
 | 2023/06/24 | 18:30 | 19:30 |         | 1       |      |        |       |        | Work on UI mockup a bit more                         |
 | 2023/06/25 | 19:00 | 24:00 |         |         |      |        |       | 5      | Image preprocessing - single augmentation            |
 | 2023/06/26 | 12:00 | 13:00 |         |         |      |        |       | 1      | Detailed design doc work                             |
@@ -53,6 +56,7 @@
 | 2023/06/29 | 20:00 | 23:00 |         |         |      |        |       | 3      | MobileNet/MobilenetV2 research                       |
 | 2023/06/30 | 16:30 | 21:30 |         |         |      |        |       | 5      | ResNet50 model testing                               |
 | 2023/06/30 | 20:30 | 23:00 |         | 3       |      |        |       |        | Research hosting providers for the web app/mobile side of the project|
+| 2023/06/30 | 19:00 | 21:00 |         |         |      | 2      |       |        | Design doc review/edits and submission               |
 | 2023/07/02 | 10:30 | 12:30 |         | 2       |      |        |       |        | CNN model type research                              |
 | 2023/07/02 | 18:00 | 21:00 |         |         |      |        |       | 3      | ResNet101 model testing                              |
 | 2023/07/04 | 12:30 | 16:30 | 4       | 4       | 4    | 4      | 4     | 4      | Group meeting                                        |
@@ -65,6 +69,9 @@
 | 2023/07/06 | 10:30 | 12:30 |         | 2       |      |        |       |        | AWS introductory research/discovery                  |
 | 2023/07/06 | 15:00 | 17:00 |         |         |      |        |       | 2      | Added confusion matrix                               |
 | 2023/07/07 | 12:00 | 22:00 |         |         |      |        |       | 6      | Xception and InceptionV3 trials                      |
+| 2023/07/07 | 17:00 | 20:00 |         |         |      | 4      |       |        | Code review of training model                        |
+| 2023/07/10 | 15:00 | 20:00 |         |         |      | 5      |       |        | Mobile app creation research                         |
+| 2023/07/11 | 13:00 | 15:00 |         |         |      | 2      |       |        | Continued mobile / web app creation research         |
 | 2023/07/11 | 19:00 | 24:00 |         |         |      |        |       | 5      | Debugging accuracy and loss                          |
 | 2023/07/12 | 20:00 | 21:00 |         |         |      | 1      |       |        | Preparing for consultant evaluation                  |
 | 2023/07/13 | 16:30 | 17:30 | 1       | 1       | 1    | 1      | 1     | 1      | FYDP class 5                                         |
@@ -72,12 +79,17 @@
 | 2023/07/13 | 15:00 | 20:00 | 5       | 5       | 5    | 5      | 5     | 5      | Group meeting                                        |
 | 2023/07/13 | 16:30 | 19:30 |         |         |      |        |       | 3      | Fixed training and testing image selection           |
 | 2023/07/14 | 19:00 | 22:00 |         | 3       |      |        |       |        | Clone repository and run image generation            |
+| 2023/07/14 | 15:00 | 20:00 |         |         |      | 5      |       |        | React Native research (mobile + web integration)     |
 | 2023/07/15 | 15:00 | 18:00 |         | 3       |      |        |       |        | MobilenetV2 research                                 |
 | 2023/07/15 | 15:30 | 16:30 |         |         | 1    |        |       |        | Streamline setup                                     |
+| 2023/07/17 | 15:00 | 17:00 |         |         |      | 2      |       |        | Training model code review – generating confusion matrix |
 | 2023/07/19 | 19:00 | 22:00 |         | 3       |      |        |       |        | AWS infrastructure/ecosystem research                |
 | 2023/07/18 | 17:30 | 20:30 |         |         | 3    |        |       |        | Refactoring, bug testing                             |
 | 2023/07/19 | 12:30 | 14:30 |         |         | 2    |        |       |        | Bug fix                                              |
+| 2023/07/19 | 13:00 | 17:00 |         |         |      |        | 4     |        | Planning out possible & feasible UI designs and workflow (mobile + web) + prep for consultant meeting|
 | 2023/07/19 | 14:00 | 16:00 |         | 2       |      |        |       |        | MobilenetV2 Prototyping/evaluating                   |
 | 2023/07/20 | 14:00 | 15:00 | 1       | 1       | 1    | 1      | 1     | 1      | Consultant meeting                                   |
 | 2023/07/22 | 12:00 | 22:00 |         |         |      |        |       | 4      | New dataset evaluation                               |
+| 2023/07/25 | 15:30 | 19:30 |         |         |      | 4      |       |        | UI design rough outline mockup                       |
 | 2023/07/27 | 16:00 | 21:00 | 5       | 5       | 5    | 5      | 5     | 5      | Revised abstract, logs + report                      |
+| 2023/07/28 | 15:00 | 20:00 | 5       | 5       | 5    | 5      | 5     | 5      | Continued edits and work on abstract, logs + report  |

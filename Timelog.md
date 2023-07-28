@@ -98,7 +98,7 @@
 | 2023/07/14 | 15:00 | 20:00 |         |         |      | 5      |       |        | React Native research (mobile + web integration)                                                     |
 | 2023/07/15 | 15:00 | 18:00 |         | 3       |      |        |       |        | MobilenetV2 research                                                                                 |
 | 2023/07/15 | 15:30 | 16:30 |         |         | 1    |        |       |        | Streamline setup                                                                                     |
-| 2023/07/15 | 10:00 | 24:00 |         |         |      | 5      | 5     |        | Group meeting (project work)                                                                         |
+| 2023/07/15 | 19:00 | 24:00 |         |         |      | 5      | 5     |        | Group meeting (project work)                                                                         |
 | 2023/07/17 | 15:00 | 17:00 |         |         |      | 2      |       |        | Training model code review – generating confusion matrix                                             |
 | 2023/07/19 | 19:00 | 22:00 |         | 3       |      |        |       |        | AWS infrastructure/ecosystem research                                                                |
 | 2023/07/18 | 17:30 | 20:30 |         |         | 3    |        |       |        | Refactoring, bug testing                                                                             |

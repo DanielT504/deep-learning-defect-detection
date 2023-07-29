@@ -3,10 +3,13 @@
 | 2023/05/10 | 16:30 | 17:30 | 1       | 1       | 1    | 1      | 1     | 1      | FDYP class 1                                                                                         |
 | 2023/05/11 | 10:30 | 12:30 |         | 2       |      |        |       |        | Brainstorming/research/project inspiration                                                           |
 | 2023/05/13 | 16:30 | 18:30 |         | 2       |      |        |       |        | Additional brainstorming/further research on topics for project idea                                 |
+| 2023/05/14 | 13:00 | 17:00 |         |         | 4    |        |       |        | Reading past project proposals, brainstorming|
 | 2023/05/15 | 13:00 | 15:00 |         |         |      |        | 2     |        | Individual brainstorming                                                                             |
 | 2023/05/15 | 21:00 | 22:00 |         | 1       |      |        |       |        | Refine ideas, go through past symposium slides                                                       |
 | 2023/05/16 | 20:00 | 21:00 |         |         |      | 1      |       |        | Brainstorming: reading abstracts                                                                     |
+| 2023/05/16 | 12:00 | 15:00 |         |         | 3    |        |       |        | Writeup potential project ideas, list goals|
 | 2023/05/17 | 13:00 | 17:00 | 4       | 4       | 4    | 4      | 4     | 4      | Brainstorming group meeting                                                                          |
+| 2023/05/17 | 18:00 | 20:00 |         |         | 3    |        |       |        | Meeting prep, emailing more consultants |
 | 2023/05/18 | 13:00 | 18:00 | 5       | 5       | 5    | 5      | 5     | 5      | Brainstorming group meeting                                                                          |
 | 2023/05/19 | 12:00 | 14:00 | 2       | 2       | 2    | 2      | 2     | 2      | Potential consultant meeting (Zahedi)                                                                |
 | 2023/05/21 | 14:00 | 17:00 |         | 3       |      |        | 3     |        | Research topics at request of Zahedi                                                                 |
@@ -21,7 +24,9 @@
 | 2023/05/27 | 16:30 | 17:30 |         |         |      |        | 1     |        | FYDP Safety Quiz (2 attempts)                                                                        |
 | 2023/05/25 | 19:30 | 20:30 |         | 1       |      |        |       |        | UI mockup design--desktop                                                                            |
 | 2023/05/26 | 21:00 | 23:00 |         | 2       |      |        |       |        | Initial research into deep learning, convoluted neural networks                                      |
+| 2023/05/26 | 12:00 | 14:00 |         |         | 2    |        |       |        | CNN research|
 | 2023/05/27 | 20:00 | 21:30 |         | 1.5     |      |        |       |        | Read over provide research paper                                                                     |
+| 2023/05/27 | 17:00 | 22:00 |         |         | 5    |        |       |        | Watching videos on CNN setup, reviewing Keras docs, reading research paper |
 | 2023/05/29 | 11:30 | 12:00 |         |         |      | 0.5    |       |        | FYDP Safety quiz completion                                                                          |
 | 2023/05/29 | 16:30 | 18:30 |         | 2       |      |        |       |        | Continue reading research paper, making notes                                                        |
 | 2023/05/30 | 13:00 | 17:00 | 4       | 4       | 4    | 4      | 4     | 4      | Project spec meeting                                                                                 |
@@ -35,6 +40,7 @@
 | 2023/06/07 | 13:00 | 17:00 | 4       | 4       | 4    | 4      | 4     | 4      | Consultant meeting prep                                                                              |
 | 2023/06/08 | 14:00 | 15:00 | 1       | 1       | 1    | 1      | 1     | 1      | Consultant/grad student meeting                                                                      |
 | 2023/06/08 | 12:00 | 14:00 |         |         |      |        |       | 2      | Image preprocessing research                                                                         |
+| 2023/06/08 | 17:00 | 19:00 |         |         | 2    |        |       |        | Research image aumentation + preprocessing|
 | 2023/06/08 | 15:00 | 17:30 |         |         |      | 2.5    |       |        | Reviewing/editing specs. Document and submission                                                     |
 | 2023/06/09 | 12:00 | 15:00 |         |         |      |        |       | 3      | CNN research                                                                                         |
 | 2023/06/11 | 12:30 | 16:30 | 4       | 4       | 4    | 4      | 4     | 4      | Group meeting                                                                                        |
@@ -79,13 +85,16 @@
 | 2023/07/06 | 14:00 | 15:00 | 1       | 1       | 1    | 1      | 1     | 1      | Consultant meeting                                                                                   |
 | 2023/07/06 | 10:30 | 12:30 |         | 2       |      |        |       |        | AWS introductory research/discovery                                                                  |
 | 2023/07/06 | 15:00 | 17:00 |         |         |      |        |       | 2      | Added confusion matrix                                                                               |
+| 2023/07/06 | 11:00 | 14:00 |         |         | 3    |        |       |        | Research Keras filters vs manual filter implementation |
 | 2023/07/07 | 12:00 | 22:00 |         |         |      |        |       | 6      | Xception and InceptionV3 trials                                                                      |
+| 2023/07/07 | 15:00 | 20:00 |         |         | 5    |        |       |        | Investigate Hough Circle Transform, test performance of manual filter implementation |
 | 2023/07/07 | 17:00 | 20:00 |         |         |      | 4      |       |        | Code review of training model                                                                        |
 | 2023/07/08 | 17:00 | 22:00 |         |         |      |        | 5     |        | Researching ways to deploy deep learning model with mobile/web app                                   |
 | 2023/07/10 | 15:00 | 20:00 |         |         |      | 5      |       |        | Mobile app creation research                                                                         |
 | 2023/07/10 | 11:00 | 15:30 |         |         |      |        | 4.5   |        | Web app tutorials                                                                                    |
 | 2023/07/10 | 17:00 | 20:30 |         |         |      |        | 3.5   |        | Mobile app tutorials                                                                                 |
 | 2023/07/11 | 13:00 | 15:00 |         |         |      | 2      |       |        | Continued mobile / web app creation research                                                         |
+| 2023/07/11 | 14:00 | 18:00 |         |         | 4    |        |       |        | Debugging, improve confusion matrix  |
 | 2023/07/11 | 16:00 | 21:00 |         |         |      |        | 5     |        | Further researching ways to deploy deep learning model with mobile/web app                           |
 | 2023/07/11 | 19:00 | 24:00 |         |         |      |        |       | 5      | Debugging accuracy and loss                                                                          |
 | 2023/07/12 | 20:00 | 21:00 |         |         |      | 1      |       |        | Preparing for consultant evaluation                                                                  |
@@ -101,8 +110,9 @@
 | 2023/07/15 | 19:00 | 24:00 |         |         |      | 5      | 5     |        | Group meeting (project work)                                                                         |
 | 2023/07/17 | 15:00 | 17:00 |         |         |      | 2      |       |        | Training model code review – generating confusion matrix                                             |
 | 2023/07/19 | 19:00 | 22:00 |         | 3       |      |        |       |        | AWS infrastructure/ecosystem research                                                                |
-| 2023/07/18 | 17:30 | 20:30 |         |         | 3    |        |       |        | Refactoring, bug testing                                                                             |
-| 2023/07/19 | 12:30 | 14:30 |         |         | 2    |        |       |        | Bug fix                                                                                              |
+| 2023/07/18 | 17:30 | 21:30 |         |         | 4    |        |       |        | Refactoring, bug testing                                                                             |
+| 2023/07/19 | 12:00 | 15:00 |         |         | 3    |        |       |        | Bug fix                                                                                              |
+| 2023/07/19 | 15:30 | 18:30 |         |         | 3    |        |       |        | Add improved confusion matrix, test filter changes |
 | 2023/07/19 | 13:00 | 17:00 |         |         |      |        | 4     |        | Planning out possible & feasible UI designs and workflow (mobile + web)+ prep for consultant meeting |
 | 2023/07/19 | 14:00 | 16:00 |         | 2       |      |        |       |        | MobilenetV2 Prototyping/evaluating                                                                   |
 | 2023/07/20 | 14:00 | 15:00 | 1       | 1       | 1    | 1      |       | 1      | Consultant meeting                                                                                   |

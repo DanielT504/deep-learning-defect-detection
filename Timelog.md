@@ -10,7 +10,7 @@
 | 2023/05/17 | 13:00 | 17:00 | 4       | 4       | 4    | 4      | 4     | 4      | Brainstorming group meeting                                                                          |
 | 2023/05/18 | 13:00 | 18:00 | 5       | 5       | 5    | 5      | 5     | 5      | Brainstorming group meeting                                                                          |
 | 2023/05/19 | 12:00 | 14:00 | 2       | 2       | 2    | 2      | 2     | 2      | Potential consultant meeting (Zahedi)                                                                |
-| 2023/05/21 | 14:00 | 17:00 | 2       | 3       |      |        | 3     |        | Research topics at request of Zahedi                                                                 |
+| 2023/05/21 | 14:00 | 17:00 | 3       | 3       |      |        | 3     |        | Research topics at request of Zahedi                                                                 |
 | 2023/05/22 | 09:00 | 10:00 | 1       | 1       | 1    | 1      | 1     | 1      | Potential consultant meeting (Carr)                                                                  |
 | 2023/05/22 | 20:00 | 21:00 | 1       | 1       | 1    | 1      | 1     | 1      | Potential consultant meeting (Harder)                                                                |
 | 2023/05/23 | 10:30 | 13:30 |         | 3       |      |        |       |        | Further research on edge computing                                                                   |
@@ -116,7 +116,7 @@
 | 2023/07/17 | 15:00 | 17:00 |         |         |      | 2      |       |        | Training model code review – generating confusion matrix                                             |
 | 2023/07/19 | 19:00 | 22:00 |         | 3       |      |        |       |        | AWS infrastructure/ecosystem research                                                                |
 | 2023/07/18 | 17:30 | 20:30 |         |         | 3    |        |       |        | Refactoring, bug testing                                                                             |
-| 2023/07/19 | 12:00 | 14:00 | 2       |         |      |        |       |        | Continued confusion matrix debugging                 |
+| 2023/07/19 | 12:00 | 13:00 | 1       |         |      |        |       |        | Continued confusion matrix debugging                 |
 | 2023/07/19 | 12:30 | 14:30 |         |         | 2    |        |       |        | Bug fix                                                                                              |
 | 2023/07/19 | 13:00 | 17:00 |         |         |      |        | 4     |        | Planning out possible & feasible UI designs and workflow (mobile + web)+ prep for consultant meeting |
 | 2023/07/19 | 14:00 | 16:00 |         | 2       |      |        |       |        | MobilenetV2 Prototyping/evaluating                                                                   |

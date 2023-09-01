@@ -4,9 +4,12 @@ import numpy as np
 from PIL import Image
 from sklearn.metrics import confusion_matrix
 
-# constants: current dimensions
+# constants
 IMAGE_WIDTH = 32
 IMAGE_HEIGHT = 32
+NUM_CLASSES = 7
+ROOT_DIR = 'dataset'
+EXCLUDED_FOLDER = "original_only"
 
 # reusable functions
 selected_image_paths_train = []

@@ -28,4 +28,4 @@ model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=
 model.fit(train_images, train_labels, epochs=num_epochs, batch_size=batch_size)
 
 # Save model - don't retrain
-model.save('cnn_model.h5')
+model.save('cnn_model.keras')

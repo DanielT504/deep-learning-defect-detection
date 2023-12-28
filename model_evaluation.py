@@ -9,7 +9,7 @@ _, num_images_used_test, _, selected_image_paths_test = collect_image_paths(ROOT
 test_images = populate_formatted_image_array(selected_image_paths_test)
 test_labels = generate_training_labels(selected_image_paths_test)
 
-model = load_model('cnn_model.h5')
+model = load_model('cnn_model.keras')
 
 # Evaluation
 test_loss, test_accuracy = model.evaluate(test_images, test_labels)

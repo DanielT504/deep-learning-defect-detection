@@ -61,7 +61,10 @@ def generate_training_labels(selected_image_paths: list):
     count = 0
     for path in selected_image_paths:
         print("generating labels: ", count, "of ", total)
-        subdir = path.split("/")
+        #subdir = path.split("/")
+        subdir = path.split("\\")
+        if len(subdir) < 3:
+            print("Selected image paths:", selected_image_paths)
         training_labels.append(int(subdir[2]))
         count += 1
     training_labels = np.array(training_labels)

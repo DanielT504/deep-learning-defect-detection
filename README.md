@@ -8,10 +8,11 @@ Executive summary:
 In power grids, polymer insulators leverage hydrophobic surfaces to operate; as a result, their effectiveness diminishes over time. This project focuses on developing a convolutional neural network that uses deep learning to classify these insulators, and then categorize them into the IEEE-defined levels of hydrophobicity ranging from 1 (high) to 6 (low). With augmented training datasets and select preprocessing techniques, the EfficientNetB0-based model will be able to provide timely, accurate assessments via web and mobile applications, lowering the barrier of entry to maintaining such insulators.
 
 PLEASE READ:
-    The first time you run the code, it will produce approximately 8GB of preprocessed images in the preset folders.
+    The first time you run cnn_model.py, it will produce approximately 8GB of preprocessed images in the preset folders.
     If you do not want this (for dev purposes), comment out the first line in cnn_model.py.
     If you do unpack the images, make sure not to commit the dataset folder because it is way too large for a git repo.
     After the images are preprocessed, you won't need to wait for them next time.
+    Once the model is created and saved, it can be reused until recreated, and can be evaluated by running model_evaluation.py
 
     Total training images used: 6074
     Total testing images used: 242

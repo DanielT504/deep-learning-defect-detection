@@ -9,36 +9,36 @@ IMAGE_WIDTH = 32
 IMAGE_HEIGHT = 32
 NUM_CLASSES = 7
 ROOT_DIR = 'dataset'
-EXCLUDED_FOLDER = "original_only"
+EXCLUDED_FOLDERS = ["valid", "test", "original_only"]
 
 # reusable functions
 selected_image_paths_train = []
 selected_image_paths_test = []
-def collect_image_paths(directory, excluded_folder):
-    print("collecting paths")
-    if "5+" in directory:
-        return 0, 0, [], []
-    num_images_used_train = 0
-    num_images_used_test = 0
-    for item in os.listdir(directory):
-        item_path = os.path.join(directory, item)
-        if os.path.isdir(item_path):
-            if os.path.basename(item_path).lower() != excluded_folder.lower():
-                used_train, used_test, _, _ = collect_image_paths(item_path, excluded_folder)
-                num_images_used_train += used_train
-                num_images_used_test += used_test
-            else:
-                _, used_test, _, _ = collect_image_paths(item_path, excluded_folder)
-                num_images_used_test += used_test
-        else:
-            if item_path.lower().endswith(('.jpg', '.jpeg', '.png')):
-                if excluded_folder not in os.path.dirname(item_path):
-                    selected_image_paths_train.append(item_path)
-                    num_images_used_train += 1
-                else:
-                    selected_image_paths_test.append(item_path)
-                    num_images_used_test += 1
-    return num_images_used_train, num_images_used_test, selected_image_paths_train, selected_image_paths_test
+def collect_image_paths(directory, excluded_folders, for_testing=False):
+   print("collecting paths")
+   if "5+" in directory:
+       return 0, 0, [], []
+   num_images_used_train = 0
+   num_images_used_test = 0
+   for item in os.listdir(directory):
+       item_path = os.path.join(directory, item)
+       if os.path.isdir(item_path):
+           if os.path.basename(item_path).lower() not in [folder.lower() for folder in excluded_folders]:
+               used_train, used_test, _, _ = collect_image_paths(item_path, excluded_folders, for_testing)
+               num_images_used_train += used_train
+               num_images_used_test += used_test
+           else:
+               _, used_test, _, _ = collect_image_paths(item_path, excluded_folders, for_testing)
+               num_images_used_test += used_test
+       else:
+           if item_path.lower().endswith(('.jpg', '.jpeg', '.png')):
+               if for_testing and any(folder in os.path.dirname(item_path) for folder in ["test", "valid"]):
+                  selected_image_paths_test.append(item_path)
+                  num_images_used_test += 1
+               elif not for_testing and not any(folder in os.path.dirname(item_path) for folder in excluded_folders):
+                  selected_image_paths_train.append(item_path)
+                  num_images_used_train += 1
+   return num_images_used_train, num_images_used_test, selected_image_paths_train, selected_image_paths_test
 
 def populate_formatted_image_array(selected_image_paths: list):
     image_array = []

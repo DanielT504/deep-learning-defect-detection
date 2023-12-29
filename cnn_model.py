@@ -3,10 +3,10 @@ from efficientnet.keras import EfficientNetB0
 from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
 from utils import NUM_CLASSES, collect_image_paths, populate_formatted_image_array, generate_training_labels
-from utils import IMAGE_HEIGHT, IMAGE_WIDTH, ROOT_DIR, EXCLUDED_FOLDER
+from utils import IMAGE_HEIGHT, IMAGE_WIDTH, ROOT_DIR, EXCLUDED_FOLDERS
 
 # collecting data on training/testing images used, populating arrays for paths of selected training/testing images
-num_images_used_train, _, selected_image_paths_train, _ = collect_image_paths(ROOT_DIR, EXCLUDED_FOLDER)
+num_images_used_train, _, selected_image_paths_train, _ = collect_image_paths(ROOT_DIR, EXCLUDED_FOLDERS)
 
 train_images = populate_formatted_image_array(selected_image_paths_train)
 

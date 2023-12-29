@@ -12,7 +12,20 @@ PLEASE READ:
     If you do not want this (for dev purposes), comment out the first line in cnn_model.py.
     If you do unpack the images, make sure not to commit the dataset folder because it is way too large for a git repo.
     After the images are preprocessed, you won't need to wait for them next time.
-    Once the model is created and saved, it can be reused until recreated, and can be evaluated by running model_evaluation.py
+    Once the model is created and saved, it can be reused until recreated, and can be evaluated by running model_evaluation.py.
+    Alternatively, use the existing keras model from our repo to run model_evaluation.py right away and produce a confusion matrix.
+
+NEW:
+    Differerent colored datasets (DG Dark Grey and LG Light Grey) have been introduced to the training and evaluation.
+    Since there are far more of these training images than the indoor/outdoor sets, they have not been preprocessed.
+    Our model also has no need for validation, so those images will be added to the test set.
+    Unfortunately the originals (~100Mb) must be pulled directly from our repo instead of the OneDrive folder because the
+    file hierarchy has been modified to maintain consistency.
+    Training/testing accuracy/loss results and the confusion matrix for the full indoor/outdoor/DG/LG dataset can be found
+    after the following results, which were trained and tested on only the indoor/outdoor datasets.
+
+
+INDOOR/OUTDOOR:
 
     Total training images used: 6074
     Total testing images used: 242
@@ -42,3 +55,34 @@ PLEASE READ:
     8/8 [==============================] - 3s 38ms/step
 
 <img width="789" alt="conf_matrix" src="https://github.com/DanielT504/deep-learning-defect-detection/assets/62156098/641edcf6-410e-4857-99da-f447fc7d5e40">
+
+
+INDOOR/OUTDOOR/DG/LG:
+
+    Epoch 1/10
+    421/421 [==============================] - 75s 127ms/step - loss: 0.8244 - accuracy: 0.6890
+    Epoch 2/10
+    421/421 [==============================] - 54s 129ms/step - loss: 0.4553 - accuracy: 0.8389
+    Epoch 3/10
+    421/421 [==============================] - 54s 128ms/step - loss: 0.3513 - accuracy: 0.8744
+    Epoch 4/10
+    421/421 [==============================] - 54s 128ms/step - loss: 0.2896 - accuracy: 0.8952
+    Epoch 5/10
+    421/421 [==============================] - 54s 128ms/step - loss: 0.2641 - accuracy: 0.9102
+    Epoch 6/10
+    421/421 [==============================] - 54s 128ms/step - loss: 0.2309 - accuracy: 0.9212
+    Epoch 7/10
+    421/421 [==============================] - 54s 128ms/step - loss: 0.2242 - accuracy: 0.9250
+    Epoch 8/10
+    421/421 [==============================] - 54s 128ms/step - loss: 0.1767 - accuracy: 0.9381
+    Epoch 9/10
+    421/421 [==============================] - 54s 128ms/step - loss: 0.1738 - accuracy: 0.9416
+    Epoch 10/10
+    421/421 [==============================] - 54s 128ms/step - loss: 0.1727 - accuracy: 0.9428
+
+    23/23 [==============================] - 3s 28ms/step - loss: 0.3302 - accuracy: 0.8847
+    Test Loss: 0.33023664355278015
+    Test Accuracy: 0.8847222328186035
+    23/23 [==============================] - 2s 28ms/step
+
+![conf-matrix2](https://github.com/DanielT504/deep-learning-defect-detection/assets/62156098/e8b8da1d-9c3c-4b2f-b8f5-c6116f5c16c8)

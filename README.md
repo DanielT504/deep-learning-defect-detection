@@ -85,3 +85,4 @@ INDOOR/OUTDOOR/DG/LG:
     Test Accuracy: 0.8847222328186035
     23/23 [==============================] - 2s 28ms/step
 
+![conf-matrix2](https://github.com/DanielT504/deep-learning-defect-detection/assets/62156098/e8b8da1d-9c3c-4b2f-b8f5-c6116f5c16c8)

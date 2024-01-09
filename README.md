@@ -21,6 +21,8 @@ NEW:
     Our model also has no need for validation, so those images will be added to the test set.
     Unfortunately the originals (~100Mb) must be pulled directly from our repo instead of the OneDrive folder because the
     file hierarchy has been modified to maintain consistency.
+    To retrain using only indoor/outdoor or only LG/DG, you should be able to just remove the unused training and test
+    folders from the dataset (although this hasn't been tested yet).
     Training/testing accuracy/loss results and the confusion matrix for the full indoor/outdoor/DG/LG dataset can be found
     after the following results, which were trained and tested on only the indoor/outdoor datasets.
 

@@ -1,3 +1,4 @@
+from matplotlib import pyplot as plt
 import numpy as np
 import keras
 
@@ -18,7 +19,19 @@ print('Test Accuracy:', test_accuracy)
 
 # Predictions
 predictions = model.predict(test_images)
+confidence = np.max(predictions, axis=1)
 predicted_labels = np.argmax(predictions, axis=1)
 
 # Plot confusion matrix
 plot_confusion_matrix(test_labels, predicted_labels, NUM_CLASSES)
+
+plt.figure(figsize=(10,7))
+plt.hist(confidence, bins=10, alpha=0.7)
+plt.title("Distribution of Confidence Scores")
+plt.xlabel("Confidence Score")
+plt.ylabel("Frequency")
+plt.show()
+
+    # prediction with confidence level for a single image
+# confidence_score = np.max(model.predict(image))
+# predicted_class = np.argmax(model.predict(image))
